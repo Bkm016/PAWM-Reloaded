@@ -1,0 +1,63 @@
+name: PVPAsWantedManager
+main: github.saukiya.pvpaswantedmanager.PVPAsWantedManager
+version: 1.0.0
+author: Saukiya
+softdepend: [PlaceholderAPI,Vault]
+commands:
+    PVPAsWantedManager:
+       description: This is a permission command.
+       usage: /<command> look help.
+       aliases: [pawm]
+permissions:
+  pvpaswantedmanager.use:
+    description: PAWM USE
+    default: true
+    children:
+      pvpaswantedmanager.open: true
+      pvpaswantedmanager.surrend: true
+  pvpaswantedmanager.open:
+    description: PAWM OPEN
+    default: true
+  pvpaswantedmanager.surrend:
+    description: PAWM SURREND
+    default: true
+  pvpaswantedmanager.admin:
+    description: PAWM ADMIN
+    default: op
+    children:
+      pvpaswantedmanager.set: true
+      pvpaswantedmanager.setpoint: true
+      pvpaswantedmanager.setjail: true
+      pvpaswantedmanager.joinjail: true
+      pvpaswantedmanager.quitjail: true
+      pvpaswantedmanager.reload: true
+      pvpaswantedmanager.wantedwhite: true
+      pvpaswantedmanager.levelwhite: true
+      pvpaswantedmanager.settime: true
+  pvpaswantedmanager.set:
+    description: PAWM SET
+    default: op
+  pvpaswantedmanager.setpoint:
+    description: PAWM SETPOINT
+    default: op
+  pvpaswantedmanager.settime:
+    description: PAWM SETTIME
+    default: op
+  pvpaswantedmanager.setjail:
+    description: PAWM SETJAIL
+    default: op
+  pvpaswantedmanager.joinjail:
+    description: PAWM JOINJAIL
+    default: op
+  pvpaswantedmanager.quitjail:
+    description: PAWM QUITJAIL
+    default: op
+  pvpaswantedmanager.reload:
+    description: PAWM RELOAD
+    default: op
+  pvpaswantedmanager.wantedwhite:
+    description: WANTED WHITE
+    default: op
+  pvpaswantedmanager.levelwhite:
+    description: LEVEL WHITE
+    default: op
